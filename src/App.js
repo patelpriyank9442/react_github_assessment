@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, BrowserRouter, Routes } from 'react-router-dom';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import { Container } from '@mui/material';
 import UserList from './component/UserList';
 import UserDetails from './component/UserDetails';

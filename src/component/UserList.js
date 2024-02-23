@@ -19,7 +19,6 @@ const UserList = () => {
     }, []);
 
     const fetchUsers = () => {
-        console.log('Fetching users...');
         axios.get('https://api.github.com/users')
             .then((res) => {
                 console.log("resssss", res);
@@ -27,10 +26,8 @@ const UserList = () => {
             })
             .catch(error => {
                 console.error('Error fetching users:', error);
-                // Handle the error here, e.g., show an error message to the user
             });
     };
-    console.log('Rendering UserList...');
 
     return (
         <>
